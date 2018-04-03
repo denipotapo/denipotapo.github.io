@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>dropdown menu example.</title>
+        <link rel="stylesheet" href="./styles.css" media="screen">
+
+
+        <style> body { max-width: 40em; } </style>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/superclick.min.js"></script>
+        <script src="./index.js"></script>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <ul class="sf-menu sf-navbar" id="example">
+            <li class="current">
+                <a href="#">Продукция</a>
+                <ul>
+                    <li class="current">
+                        <a href="#">Стиральные машины</a>
+                        <ul>
+                            <li class="current"><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">Телевизоры</a>
+                        <ul>
+                            <li class="current"><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Муз. Центры</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Ноутбуки</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Продукция 2</a>
+                <ul>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">short</a></li>
+                            <li><a href="#">short</a></li>
+                            <li><a href="#">short</a></li>
+                            <li><a href="#">short</a></li>
+                            <li><a href="#">short</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">menu item</a>
+                        <ul>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                            <li><a href="#">menu item</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Акции</a>
+            </li>
+            <li>
+                <a href="#">О нас</a>
+            </li>
+        </ul>
+<script>
+
+(function($){$(document).ready(function(){var example=$("#example").superclick({});$(".destroy").on("click",function(){example.superclick("destroy");return!1});$(".init").on("click",function(){example.superclick();return!1});$(".open").on("click",function(){example.children("li:first").superclick("show");return!1});$(".close").on("click",function(){example.children("li:first").superclick("hide");return!1});$(".closeall").on("click",function(){example.superclick("reset");return!1})})})(jQuery)
+
+</script>
+    </body>
+</html>
