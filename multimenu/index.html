@@ -1,134 +1,115 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <title>dropdown menu example.</title>
-        <link rel="stylesheet" href="./styles.css" media="screen">
-
-
-        <style> body { max-width: 40em; } </style>
-        <script src="./js/jquery.js"></script>
-        <script src="./js/superclick.min.js"></script>
-        <script src="./index.js"></script>
-        <script>
-
-        </script>
+		<title>webpack</title>
+		<link rel="stylesheet" type="text/css" href="./build/style.css">
     </head>
-    <body>
-        <ul class="sf-menu sf-navbar" id="example">
-            <li class="current">
+<body>
+    <nav id="nav">
+        <ul class="clearfix">
+            <li>
                 <a href="#">Продукция</a>
-                <ul>
-                    <li class="current">
+                <ul class="subnav-lvl-1 clearfix">
+                    <li>
                         <a href="#">Стиральные машины</a>
-                        <ul>
-                            <li class="current"><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
+                        <ul class="subnav-lvl-2">
+                            <li>
+                                <a href="#">Вертикальная загрузка</a>
+                                <ul class="subnav-lvl-3">
+                                    <li>
+                                        <a href="http://api.myjson.com/bins/19a817">Bosch</a>
+                                        <ul class="subnav-lvl-4">
+                                            <li class="item-with-data"></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="http://api.myjson.com/bins/t55tn">Вирпул</a>
+                                        <ul class="subnav-lvl-4">
+                                            <li class="item-with-data"></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Level 2</a>
+                                    </li>
+                                    <li><a href="#">Level 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">Горизонтальная загрузка</a>
+                            </li>
+                            <li><a href="">Ширина до 60см</a>
+                            </li>
+                            <li><a href="">Ширина 60см</a>
+                            </li>
+
                         </ul>
                     </li>
-                    <li class="">
-                        <a href="#">Телевизоры</a>
-                        <ul>
-                            <li class="current"><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                        </ul>
+                    <li><a href="#">Телевизоры</a>
                     </li>
-                    <li>
-                        <a href="#">Муз. Центры</a>
-                        <ul>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                        </ul>
+                    <li><a href="#">Музыкальные центры</a>
                     </li>
-                    <li>
-                        <a href="#">Ноутбуки</a>
-                        <ul>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                        </ul>
+                    <li><a href="#">Ноутбуки</a>
                     </li>
                 </ul>
             </li>
 
             <li>
-                <a href="#">Продукция 2</a>
-                <ul>
+                <a href="#">Продукция 2 </a>
+                <ul class="subnav-lvl-1">
                     <li>
-                        <a href="#">menu item</a>
-                        <ul>
-                            <li><a href="#">short</a></li>
-                            <li><a href="#">short</a></li>
-                            <li><a href="#">short</a></li>
-                            <li><a href="#">short</a></li>
-                            <li><a href="#">short</a></li>
+                        <a href="#">Item 2 Level 1 Submenu</a>
+                        <ul class="subnav-lvl-2">
+                            <li>
+                                <a href="#">Item 2 Level 2 Submenu</a>
+                                <ul class="subnav-lvl-3">
+                                    <li>
+                                        <a href="#">Item 2 Level 3 Submenu</a>
+                                        <ul class="subnav-lvl-4">
+                                            <li><a href="#">Item 2 Level 3 </a>
+                                            </li>
+                                            <li><a href="">Item 2 Level 3 </a>
+                                            </li>
+                                            <li><a href="">Level 3</a>
+                                            </li>
+                                            <li><a href="">Level 2</a>
+                                            </li>
+                                            <li><a href="#">Level 2</a>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Level 2 </a>
+                                    </li>
+                                    <li><a href="">Level 2</a>
+                                    </li>
+                                    <li><a href="">Level 2</a>
+                                    </li>
+                                    <li><a href="#">Level 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">Level 2 </a>
+                            </li>
+                            <li><a href="">Level 2</a>
+                            </li>
+                            <li><a href="">Level 2</a>
+                            </li>
+                            <li><a href="#">Level 2</a>
+                            </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">menu item</a>
-                        <ul>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                        </ul>
+                    <li><a href="#">Level 1 </a>
                     </li>
-                    <li>
-                        <a href="#">menu item</a>
-                        <ul>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                        </ul>
+                    <li><a href="#">Level 1 </a>
                     </li>
-                    <li>
-                        <a href="#">menu item</a>
-                        <ul>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">menu item</a>
-                        <ul>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                            <li><a href="#">menu item</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
             </li>
-            <li>
-                <a href="#">Акции</a>
+            <li><a href="#section-3">Акции</a>
             </li>
-            <li>
-                <a href="#">О нас</a>
+            <li><a href="#section-4">О нас</a>
             </li>
+
         </ul>
-<script>
-
-(function($){$(document).ready(function(){var example=$("#example").superclick({});$(".destroy").on("click",function(){example.superclick("destroy");return!1});$(".init").on("click",function(){example.superclick();return!1});$(".open").on("click",function(){example.children("li:first").superclick("show");return!1});$(".close").on("click",function(){example.children("li:first").superclick("hide");return!1});$(".closeall").on("click",function(){example.superclick("reset");return!1})})})(jQuery)
-
-</script>
-    </body>
+    </nav>
+	<script src="./build/appBundle.js"></script>
+</body>
 </html>
